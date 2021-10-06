@@ -32,4 +32,7 @@
     <string name="status_bar_roaming">Roaming indicator</string>
     <!-- Name of the data saver status bar icon. -->
     <string name="status_bar_data_saver">Data saver</string>
+
+    <!-- Color of the UDFPS pressed view -->
+    <color name="config_udfpsColor">#ffffffff</color>
 </resources>
