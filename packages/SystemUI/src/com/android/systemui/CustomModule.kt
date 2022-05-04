@@ -17,6 +17,7 @@
 package com.android.systemui.corpora
 
 import com.android.systemui.qs.tileimpl.QSTileImpl
+import com.android.systemui.qs.tiles.AutoBrightnessTile
 import com.android.systemui.qs.tiles.CellularTile
 import com.android.systemui.qs.tiles.WifiTile
 import com.android.systemui.qs.tiles.HeadsUpTile
@@ -52,4 +53,9 @@ interface CustomModule {
     @IntoMap
     @StringKey(AODTile.TILE_SPEC)
     fun bindAODTile(aodTile: AODTile): QSTileImpl<*>
+    /** Inject AutoBrightnessTile into tileMap in QSModule */
+    @Binds
+    @IntoMap
+    @StringKey(AutoBrightnessTile.TILE_SPEC)
+    fun bindAutoBrightnessTile(autobrightnessTile: AutoBrightnessTile): QSTileImpl<*>
 }
